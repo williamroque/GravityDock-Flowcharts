@@ -1,4 +1,4 @@
-import type { InputDefinition, OutputDefinition } from '@tracereactive/types';
+import type { InputDefinition, OutputDefinition } from '@gravitydock/types';
 
 /**
  * Grows input ports dynamically based on connected edges.

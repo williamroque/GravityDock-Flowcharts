@@ -1,4 +1,4 @@
-import type { InputDefinition, OutputDefinition } from '@tracereactive/types';
+import type { InputDefinition, OutputDefinition } from '@gravitydock/types';
 import { FlowchartShapeNode } from './FlowchartShapeNode';
 import { dynamicFlowchartInputs, dynamicFlowchartOutputs } from './portHelpers';
 
@@ -11,9 +11,9 @@ export class FlowchartRectangleNode extends FlowchartShapeNode {
         { name: 'text', label: 'Text', type: 'text' as const, defaultValue: '', isPrimary: true },
         { name: 'width', label: 'Width', type: 'number' as const, defaultValue: undefined, min: 0 },
         { name: 'height', label: 'Height', type: 'number' as const, defaultValue: undefined, min: 0 },
-        { name: 'padding', label: 'Padding', type: 'style' as const, styleType: 'size' as const, category: 'style' as const, defaultValue: 'theme:com.tracereactive.flowcharts.flowchartNodePadding' },
-        { name: 'fillColor', label: 'Fill', type: 'style' as const, styleType: 'color' as const, category: 'style' as const, defaultValue: 'theme:com.tracereactive.flowcharts.flowchartRectangleBackground' },
-        { name: 'borderColor', label: 'Border', type: 'style' as const, styleType: 'color' as const, category: 'style' as const, defaultValue: 'theme:com.tracereactive.flowcharts.flowchartRectangleBorder' },
+        { name: 'padding', label: 'Padding', type: 'style' as const, styleType: 'size' as const, category: 'style' as const, defaultValue: 'theme:com.gravitydock.flowcharts.flowchartNodePadding' },
+        { name: 'fillColor', label: 'Fill', type: 'style' as const, styleType: 'color' as const, category: 'style' as const, defaultValue: 'theme:com.gravitydock.flowcharts.flowchartRectangleBackground' },
+        { name: 'borderColor', label: 'Border', type: 'style' as const, styleType: 'color' as const, category: 'style' as const, defaultValue: 'theme:com.gravitydock.flowcharts.flowchartRectangleBorder' },
         { 
             name: 'borderStyle', 
             label: 'Border style', 
@@ -28,9 +28,9 @@ export class FlowchartRectangleNode extends FlowchartShapeNode {
                 { label: 'None', value: 'none' }
             ]
         },
-        { name: 'textColor', label: 'Text color', type: 'style' as const, styleType: 'color' as const, category: 'style' as const, defaultValue: 'theme:com.tracereactive.flowcharts.flowchartRectangleTextColor' },
-        { name: 'borderWidth', label: 'Border width', type: 'style' as const, styleType: 'size' as const, category: 'style' as const, defaultValue: 'theme:com.tracereactive.flowcharts.flowchartBorderWidth' },
-        { name: 'borderRadius', label: 'Border radius', type: 'style' as const, styleType: 'size' as const, category: 'style' as const, defaultValue: 'theme:com.tracereactive.flowcharts.flowchartRectangleBorderRadius' }
+        { name: 'textColor', label: 'Text color', type: 'style' as const, styleType: 'color' as const, category: 'style' as const, defaultValue: 'theme:com.gravitydock.flowcharts.flowchartRectangleTextColor' },
+        { name: 'borderWidth', label: 'Border width', type: 'style' as const, styleType: 'size' as const, category: 'style' as const, defaultValue: 'theme:com.gravitydock.flowcharts.flowchartBorderWidth' },
+        { name: 'borderRadius', label: 'Border radius', type: 'style' as const, styleType: 'size' as const, category: 'style' as const, defaultValue: 'theme:com.gravitydock.flowcharts.flowchartRectangleBorderRadius' }
     ];
 
 

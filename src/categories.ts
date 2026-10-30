@@ -1,3 +1,3 @@
-import type { NodeCategory } from '@tracereactive/types';
+import type { NodeCategory } from '@gravitydock/types';
 
-export const FlowchartCategory: NodeCategory = { name: 'Flowchart (Flowcharts)', accent: 'rose-400', packageId: 'com.tracereactive.flowcharts' };
+export const FlowchartCategory: NodeCategory = { name: 'Flowchart (Flowcharts)', accent: 'rose-400', packageId: 'com.gravitydock.flowcharts' };

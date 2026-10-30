@@ -1,5 +1,5 @@
 import { FlowchartShapeNode } from './FlowchartShapeNode';
-import type { InputDefinition, OutputDefinition } from '@tracereactive/types';
+import type { InputDefinition, OutputDefinition } from '@gravitydock/types';
 
 export class FlowchartCombineNode extends FlowchartShapeNode {
     readonly typeId = 'flowchart-combine';

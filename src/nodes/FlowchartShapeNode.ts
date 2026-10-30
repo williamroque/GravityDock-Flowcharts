@@ -1,5 +1,5 @@
-import { BaseNode } from '@tracereactive/types';
-import type { NodeCategory } from '@tracereactive/types';
+import { BaseNode } from '@gravitydock/types';
+import type { NodeCategory } from '@gravitydock/types';
 import { FlowchartCategory } from '../categories';
 
 export abstract class FlowchartShapeNode extends BaseNode {

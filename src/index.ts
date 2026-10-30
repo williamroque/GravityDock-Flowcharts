@@ -8,8 +8,8 @@ import { FlowchartGroupNode } from './nodes/FlowchartGroupNode';
 import { FlowchartRenderNode } from './nodes/FlowchartRenderNode';
 import { FlowchartCombineNode } from './nodes/FlowchartCombineNode';
 
-// The traceReactive API is exposed via preload in the sandbox
-declare const traceReactive: {
+// The gravityDock API is exposed via preload in the sandbox
+declare const gravityDock: {
     registerNodes: (nodes: any[]) => void;
     registerPreviewers: (previewers: any[]) => void;
     registerExporters: (exporters: any[]) => void;
@@ -43,9 +43,9 @@ const serializableNodes = nodes.map(n => ({
     dynamicInputs: n.dynamicInputs,
     dynamicOutputs: n.dynamicOutputs
 }));
-traceReactive.registerNodes(serializableNodes);
+gravityDock.registerNodes(serializableNodes);
 
-traceReactive.registerThemeSections([
+gravityDock.registerThemeSections([
     {
         name: 'Flowchart: General',
         variables: [
@@ -120,7 +120,7 @@ traceReactive.registerThemeSections([
 ]);
 
 // 3. Listen for evaluation requests
-traceReactive.onEvaluateNode(async ({ typeId, inputs, properties }) => {
+gravityDock.onEvaluateNode(async ({ typeId, inputs, properties }) => {
     const node = nodes.find(n => n.typeId === typeId);
     if (!node) {
         throw new Error(`Unknown node type: ${typeId}`);

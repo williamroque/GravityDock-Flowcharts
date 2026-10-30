@@ -1,5 +1,5 @@
 {
-  "id": "com.tracereactive.flowcharts",
+  "id": "com.gravitydock.flowcharts",
   "name": "Flowcharts",
   "version": "1.0.0",
   "description": "Standard flowchart nodes and rendering capabilities.",
